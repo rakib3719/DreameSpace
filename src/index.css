@@ -5,3 +5,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+ .active {
+
+color: #F59914 !important;
+background-color: transparent !important;
+
+
+}
+
+.banner {
+    background: linear-gradient(45deg, #C1DEE8, #FBD9B9);
+
+}
