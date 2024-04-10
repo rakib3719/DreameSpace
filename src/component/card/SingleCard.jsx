@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 const SingleCard = ({cardData}) => {
-    console.log(cardData);
+
 
 
     const {area, description, estate_title, facilities, image, location, price, segment_name,id
@@ -37,7 +37,7 @@ const SingleCard = ({cardData}) => {
     <h2 className="card-title font-poppins  font-bold">{estate_title}</h2>
 <p  className='flex items-center gap-2'> <FaBuilding  className='text-orange-500 '></FaBuilding>  {segment_name} </p>
 
-    <p  className='my-2 h-22'>{description.slice(0, 100)}...</p>
+    <p  className='my-2 h-16'>{description.slice(0, 100)}...</p>
 
 <h1  className='font-bold font-playFair  mt-4'>Facilites :</h1>
     {
@@ -48,7 +48,7 @@ const SingleCard = ({cardData}) => {
 
         
     </div>
-  <div className="card-actions justify-end"> <Link to={`details/${id}`} className="btn bg-orange-500 text-white w-full"> View Details </Link>
+  <div className="card-actions justify-end"> <Link to={`details/${id}`} className="btn bg-orange-500 text-white w-full"> View Property </Link>
     </div>
   </div>
 </div>

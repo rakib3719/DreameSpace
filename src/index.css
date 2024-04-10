@@ -26,3 +26,24 @@ background-color: transparent !important;
 .status2{
     border-radius: 0 0 0 20px; 
 }
+
+.error-bg{
+
+    background-image: url('/src/assets/images/Rectangle\ 3.png');
+    background-size: cover;
+}
+.login-bg{
+    background-image: url('./assets/images/loginbg-1.jpg');
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 770px) {
+    .error-bg {
+        background-image: none;
+background-color: #FFEE93F2;
+width: 100%;
+border:1px solid orange;
+border-radius: 12px 12px 0 0;}
+  }
+
