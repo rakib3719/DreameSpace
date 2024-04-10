@@ -1,6 +1,16 @@
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Login = () => {
+
+
+    const handleSubmit = e => {
+        e.preventDefault()
+        const email = e.target.email.value
+        const password = e.target.password.value
+
+        console.log(email, password);
+    }
     return (
         <div  className="login-bg h-[720px] md:h-[550px] flex items-center rounded-lg mt-8 ">
     
@@ -35,13 +45,14 @@ login with your personal info</p>
 <div className="login-main md:col-span-2 rounded-b-3xl  md:rounded-l-none md:rounded-r-3xl  bg-[#D9D9D9]">
 
 <h1  className=" font-bold text-2xl font-workSense text-orange-500 text-center mt-4 md:mt-12"> Log into DreamSpace </h1>
-<form  className="text-center p-4 md:p-0 mt-4"> 
+<form onSubmit={handleSubmit} className="text-center p-4 md:p-0 mt-4"> 
 
 <input name="email" type="email" placeholder="Type Here Your Email" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000]  w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black" />
 
 
-<input name="email" type="email" placeholder="Type Your Password" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black" />
+<input name="password" type="password" placeholder="Type Your Password" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black" />
 <br />
+
 <input type="submit" value="Log In" className="btn w-full bg-orange-500 text-white max-w-[80%] sm:max-w-[70%] md:max-w-xs  rounded-full  hover:bg-orange-600 mt-6" />
 <br />
 
@@ -56,7 +67,7 @@ login with your personal info</p>
 <button className="btn btn-outline mt-4 md:px-10 ml-3 max-w-xs rounded-full">  <FaGithub></FaGithub> GitHub</button>
 </div>
 
-<p className="mt-4  text-center font-workSense pb-8"> Don't Have any account? <span className="text-orange-500 font-bold underline">Sign-up</span> </p>  
+<p className="mt-4  text-center font-workSense pb-8"> Don't Have any account? <Link to={'/registar'} className="text-orange-500 font-bold underline">Registar</Link> </p>  
 
 </div>
 

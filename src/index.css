@@ -36,7 +36,11 @@ background-color: transparent !important;
     background-image: url('./assets/images/loginbg-1.jpg');
     background-size: cover;
 }
+.registar-bg{
 
+    background-image: url('./assets/images//registarbg.png');
+    background-size: cover;
+}
 
 @media screen and (max-width: 770px) {
     .error-bg {

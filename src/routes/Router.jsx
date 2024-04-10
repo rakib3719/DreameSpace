@@ -6,6 +6,7 @@ import Home from "../pages/home/Home";
 import Details from "../component/details/Details";
 import Error from "../component/error/Error";
 import Login from "../component/login/Login";
+import Registar from "../component/registar/Registar";
 
 
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         {
             path:'/login',
             element: <Login></Login>
+        },
+        {
+            path:'/registar',
+            element:<Registar></Registar>
         }
     ]
 }
