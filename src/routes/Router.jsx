@@ -7,6 +7,8 @@ import Details from "../component/details/Details";
 import Error from "../component/error/Error";
 import Login from "../component/login/Login";
 import Registar from "../component/registar/Registar";
+import PrivateRoute from "../privateRoute/PrivateRoute";
+import UpdateProfile from "../component/updateProfile/UpdateProfile";
 
 
 
@@ -27,8 +29,10 @@ const router = createBrowserRouter([
             element: <Home></Home>
         },
         {
-            path: '/update_profiles',
-            element: <p>this is profile</p>
+            path: '/update_profile',
+            element: <PrivateRoute>
+                <UpdateProfile></UpdateProfile>
+            </PrivateRoute>
         },
         {
 

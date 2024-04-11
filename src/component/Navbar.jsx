@@ -1,9 +1,20 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { ContextAuth } from "../context/AuthContext";
+import { FaUser } from "react-icons/fa"
 
 
 const Navbar = () => {
 
-
+const {user, logOut} = useContext(ContextAuth)
+console.log(user)
+const logOutHandle = ()=>{
+  logOut()
+  .then(result => {
+    console.log(result)
+    .catch(error => {alert(error.message)})
+  })
+}
     const nav = <div className="md:flex text-lg font-poppins">
     
 <li>    <NavLink  to='/' >  Home </NavLink></li>
@@ -30,8 +41,38 @@ const Navbar = () => {
         {nav}
     </ul>
   </div>
-  <div className="navbar-end">
- <Link to='/login' className="btn text-white bg-orange-500">  Log in </Link>
+
+  <div>
+
+   
+  </div>
+  <div className="navbar-end flex items-center">
+
+    {
+
+      user && <div>
+      <div className="tooltip tooltip-bottom mr-4" data-tip={user.displayName} >
+      
+      {
+        user.photoURL ?       <img src={user.photoURL} className="w-12 mt-2 rounded-full h-12 border-2 border-orange-600" alt="" /> :<FaUser className="text-3xl " ></FaUser> 
+      }
+      </div>
+          </div>
+    }
+    {
+
+      user &&  <Link onClick={logOutHandle} className="btn text-white bg-orange-500"> 
+      Log out </Link>  
+    }
+
+    {
+
+      !user && <Link  to='/login' className="btn text-white bg-orange-500"> 
+      Log in </Link>
+
+    }
+
+
   </div>
 </div>
         </div>

@@ -1,19 +1,33 @@
+import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link,  useLocation, useNavigate } from "react-router-dom";
+import { ContextAuth } from "../../context/AuthContext";
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
-
+    const currentLocation = useLocation()
+    console.log(currentLocation);
+const  navigate =  useNavigate()
+    const {logIn} = useContext(ContextAuth)
 
     const handleSubmit = e => {
         e.preventDefault()
         const email = e.target.email.value
         const password = e.target.password.value
-
-        console.log(email, password);
+logIn(email, password)
+.then(result => {
+    console.log(result);
+ navigate(currentLocation.state)
+})
+.catch(error => {
+    console.log(error.message);
+    toast.error('Invalid email or password')
+})
     }
     return (
         <div  className="login-bg h-[720px] md:h-[550px] flex items-center rounded-lg mt-8 ">
     
+    <ToastContainer></ToastContainer>
 <div  className="w-[94%] md:w-[82%] mx-auto bg-white   h-[84%] my-auto grid md:grid-cols-3 rounded-3xl">
 
 <div className="login-title  bg-[#357488] rounded-t-3xl md:rounded-r-none  md:rounded-l-3xl pl-4 pt-4">
