@@ -23,7 +23,7 @@ const Banner = () => {
     return (
 
 
-<Swiper
+<Swiper data-aos="fade-down"
    modules={[Navigation, Pagination, Scrollbar, A11y]}
 spaceBetween={50}
 slidesPerView={1}

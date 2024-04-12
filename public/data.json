@@ -1,5 +1,4 @@
 [
-
   {
     "id": 1,
     "estate_title": "Modern Family Home",
@@ -8,12 +7,12 @@
     "price": "$500,000",
     "status": "For Sale",
     "area": "2500 sq ft",
-    "location": " Bashundhara",
+    "location": "Bashundhara",
     "facilities": ["Living Room", "Swimming Pool", "Garden"],
     "image": "https://i.ibb.co/qWYKj56/44.jpg",
-    "build_material": "Concrete, Steel",
-    "engineers":"ABC Engineering Firm",
-    "unique_feature": "Smart Home Integration"
+    "build_material": ["Concrete", "Steel", "Glass", "Brick"],
+    "engineers": "ABC Engineering Firm",
+    "unique_feature": ["Smart Home Integration", "Energy-efficient design", "Outdoor BBQ area", "Home theater system"]
   },
   {
     "id": 2,
@@ -26,9 +25,9 @@
     "location": "Cumilla",
     "facilities": ["Living Room", "Kitchen", "Backyard"],
     "image": "https://i.ibb.co/7k2NWRm/townhouse.jpg",
-    "build_material": "Brick, Wood",
+    "build_material": ["Brick", "Wood", "Concrete", "Steel"],
     "engineers": "XYZ Construction Company",
-    "unique_feature": "Rooftop Garden"
+    "unique_feature": ["Rooftop Garden", "Outdoor Patio", "Solar panels", "Fireplace"]
   },
   {
     "id": 3,
@@ -38,12 +37,12 @@
     "price": "$1,200/month",
     "status": "For Rent",
     "area": "1000 sq ft",
-    "location": "Dhaka, Mirpur",
+    "location": " Mirpur, Dhaka",
     "facilities": ["Living Room", "Kitchen", "Balcony"],
     "image": "https://i.ibb.co/WDHY3PG/apartment-home-residential-building-outdoor-concept-street-backgrounds-250132-5132.jpg",
-    "build_material": "Steel, Glass",
+    "build_material": ["Steel", "Glass", "Concrete", "Brick"],
     "engineers": "PQR Architects & Engineers",
-    "unique_feature": "Green Roof Garden"
+    "unique_feature": ["Green Roof Garden", "Fitness Center", "Security System", "Community Lounge"]
   },
   {
     "id": 4,
@@ -56,9 +55,9 @@
     "location": "Uttara, Dhaka",
     "facilities": ["Study Rooms", "Recreation Area", "Laundry Facilities"],
     "image": "https://i.ibb.co/bXB76wF/full-shot-kid-running-outdoors.jpg",
-    "build_material": "Concrete, Steel",
+    "build_material": ["Concrete", "Steel", "Brick", "Wood"],
     "engineers": "LMN Construction Group",
-    "unique_feature": "Community Learning Center"
+    "unique_feature": ["Community Learning Center", "Gymnasium", "Game Room", "Computer Lab"]
   },
   {
     "id": 5,
@@ -71,9 +70,9 @@
     "location": "Chattogram",
     "facilities": ["Senior-friendly Features", "Community Center", "Gardens"],
     "image": "https://i.ibb.co/Y7NYvvy/bdad893c80d3d12370dce2f706c50f5c.jpg",
-    "build_material": "Brick, Concrete",
+    "build_material": ["Brick", "Concrete", "Steel", "Glass"],
     "engineers": "QRS Architects & Engineers",
-    "unique_feature": "Wellness Spa Center"
+    "unique_feature": ["Wellness Spa Center", "Library", "Walking Trails", "Billiards Room"]
   },
   {
     "id": 6,
@@ -86,9 +85,9 @@
     "location": "Barishal",
     "facilities": ["Private Dock", "Infinity Pool", "Gym"],
     "image": "https://i.ibb.co/j32sNTd/images.jpg",
-    "build_material": "Concrete, Glass",
+    "build_material": ["Concrete", "Glass", "Steel", "Wood"],
     "engineers": "STU Architecture & Engineering",
-    "unique_feature": "Yacht Parking"
+    "unique_feature": ["Yacht Parking", "Outdoor Barbecue Area", "Home Theater", "Guest House"]
   },
   {
     "id": 7,
@@ -98,12 +97,12 @@
     "price": "$900/month",
     "status": "For Rent",
     "area": "800 sq ft",
-    "location": "Dhaka, Gulshan",
+    "location": "Gulshan, Dhaka",
     "facilities": ["Central Location", "Fitness Center", "Security"],
     "image": "https://i.ibb.co/BwBpRjZ/modern-urban-buildings-view.jpg",
-    "build_material": "Steel, Glass",
+    "build_material": ["Steel", "Glass", "Concrete", "Brick"],
     "engineers": "UVW Architects & Engineers",
-    "unique_feature": "Sky Lounge"
+    "unique_feature": ["Sky Lounge", "Roof Deck", "Pet Park", "Coffee Lounge"]
   },
   {
     "id": 8,
@@ -113,12 +112,12 @@
     "price": "$400,000",
     "status": "For Sale",
     "area": "1800 sq ft",
-    "location": "Dhaka, Uttara",
+    "location": "Uttara, Dhaka ",
     "facilities": ["Backyard", "Fire Pit", "Garden"],
     "image": "https://i.ibb.co/hZWPJsK/istockphoto-1421545971-1024x1024.jpg",
-    "build_material": "Brick, Wood",
+    "build_material": ["Brick", "Wood", "Concrete", "Steel"],
     "engineers": "XYZ Construction Company",
-    "unique_feature": "Outdoor Entertainment Area"
+    "unique_feature": ["Outdoor Entertainment Area", "Gazebo", "Outdoor Kitchen", "Pond"]
   },
   {
     "id": 9,
@@ -131,8 +130,8 @@
     "location": "Rangamati",
     "facilities": ["Lakefront Views", "Spa", "Outdoor Lounge"],
     "image": "https://i.ibb.co/2KxX3Dv/way-white-house.jpg",
-    "build_material": "Concrete, Glass",
+    "build_material": ["Concrete", "Glass", "Brick", "Wood"],
     "engineers": "JKL Architecture & Engineering",
-    "unique_feature": "Helipad"
+    "unique_feature": ["Helipad", "Outdoor Dining Area", "Scenic Walking Paths", "Fountain"]
   }
 ]

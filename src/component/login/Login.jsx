@@ -3,12 +3,36 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link,  useLocation, useNavigate } from "react-router-dom";
 import { ContextAuth } from "../../context/AuthContext";
 import { ToastContainer, toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const currentLocation = useLocation()
     console.log(currentLocation);
 const  navigate =  useNavigate()
-    const {logIn} = useContext(ContextAuth)
+    const {logIn, loginWithGoogle, loginWithGitHub } = useContext(ContextAuth)
+
+const googleLogin = ()=> {
+    loginWithGoogle()
+    .then(result => {
+        console.log(result);
+        navigate(currentLocation.state)
+    })
+    .catch(error => {
+        toast.error(error.message)
+    })
+}
+
+
+const gitHubLogin = ()=> {
+    loginWithGitHub()
+    .then(result => {
+        console.log(result);
+        navigate(currentLocation.state)
+    })
+    .catch(error => {
+        toast.error(error.message)
+    })
+}
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -26,7 +50,9 @@ logIn(email, password)
     }
     return (
         <div  className="login-bg h-[720px] md:h-[550px] flex items-center rounded-lg mt-8 ">
-    
+    <Helmet>
+        <title> DreamSpace | LogIn </title>
+    </Helmet>
     <ToastContainer></ToastContainer>
 <div  className="w-[94%] md:w-[82%] mx-auto bg-white   h-[84%] my-auto grid md:grid-cols-3 rounded-3xl">
 
@@ -77,8 +103,8 @@ login with your personal info</p>
 
 <p className="mt-2 font-bold font-workSense">Or log In with</p>
 
-<button className="btn bg-[#357488] md:max-w-xs rounded-full hover:bg-[#4595ae] mt-2 text-white md:px-10 mr-3" > <FaGoogle></FaGoogle>  Goggle </button>
-<button className="btn btn-outline mt-4 md:px-10 ml-3 max-w-xs rounded-full">  <FaGithub></FaGithub> GitHub</button>
+<button onClick={googleLogin} className="btn bg-[#357488] md:max-w-xs rounded-full hover:bg-[#4595ae] mt-2 text-white md:px-10 mr-3" > <FaGoogle></FaGoogle>  Goggle </button>
+<button onClick={gitHubLogin} className="btn btn-outline mt-4 md:px-10 ml-3 max-w-xs rounded-full">  <FaGithub></FaGithub> GitHub</button>
 </div>
 
 <p className="mt-4  text-center font-workSense pb-8"> Don't Have any account? <Link to={'/registar'} className="text-orange-500 font-bold underline">Registar</Link> </p>  

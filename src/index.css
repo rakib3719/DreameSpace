@@ -41,6 +41,18 @@ background-color: transparent !important;
     background-image: url('./assets/images//registarbg.png');
     background-size: cover;
 }
+.card-bg{
+    background-color: #0093E9;background-image: linear-gradient(160deg, rgb(239, 175, 57)  0%, #b12bc6 100%);
+    
+
+}
+
+/* .about-bg{
+    background-image: url('./assets/images//old-house-victorian-style-illustration-white-background-black-white-illustration-cont_101266-15054.jpg');
+    background-size: cover;
+
+
+} */
 
 @media screen and (max-width: 770px) {
     .error-bg {

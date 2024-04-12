@@ -8,9 +8,10 @@ const Slider4 = () => {
           
             <div className="left-banner space-y-2 md:w-[40%]">
            
-           <p  className='font-workSense' >Welcome to DreamSpace</p>
-           <h1  className="text-[40px] font-bold font-poppins" >Exquisite Family House Management</h1>
-            <p  className="font-workSense" >Adjacent to Supermarkets, Bus Stops, Train Stations, the Vibrant Carmen Neighborhood, and More!</p>
+           <p  className='font-workSense text-orange-500' >Welcome to DreamSpace</p>
+          
+<h1 className="text-[40px] font-bold font-poppins">Exquisite Senior Living Communities</h1>
+<p className="font-workSense">Elegant residences nestled near essential amenities like supermarkets, bus stops, train stations, and the lively Carmen Neighborhood, offering a vibrant lifestyle for seniors and their families.</p>
            
             </div>
             <div className="right-banner ">

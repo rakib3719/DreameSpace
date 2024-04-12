@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ContextAuth } from "../../context/AuthContext";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 
 const Registar = () => {
@@ -55,6 +56,11 @@ toast("Registration Successfully")
     return (
         <div  className="registar-bg h-[800px] md:h-[600px] flex items-center rounded-lg mt-8 ">
         <ToastContainer></ToastContainer>
+        <Helmet>
+            
+
+            <title> DreamSpace | Registar </title>
+        </Helmet>
         <div  className="w-[94%] md:w-[82%] mx-auto bg-white   h-[84%] my-auto grid md:grid-cols-3 rounded-3xl">
         
         <div className="login-title  bg-[#357488] rounded-t-3xl md:rounded-r-none  md:rounded-l-3xl pl-4 pt-4">

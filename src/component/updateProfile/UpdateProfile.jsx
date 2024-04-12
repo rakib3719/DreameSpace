@@ -3,6 +3,7 @@ import { MdEmail, MdSave } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { ContextAuth } from "../../context/AuthContext";
+import { Helmet } from "react-helmet-async";
 
 
 const UpdateProfile = () => {
@@ -17,7 +18,7 @@ const UpdateProfile = () => {
        updatesProfile(name, photo)
        .then(result => {
         console.log(result);
-        location.reload(n)
+        location.reload()
        })
        .catch(
         (error)=> {
@@ -47,6 +48,12 @@ setName(names)
  
     return (
         <div  className="md:w-[70%] lg:w-[55%] mx-auto bg-[#F1F8E9] py-8 border rounded px-2 ">
+            <Helmet>
+
+                <title>
+                    UpdateProfile
+                </title>
+            </Helmet>
       <form   onSubmit={formSUbmit}>
 
     <h1 className="text-orange-500 flex gap-2 font-bold text-lg items-center pl-4">    <GrDocumentUpdate /> Update your profile</h1>

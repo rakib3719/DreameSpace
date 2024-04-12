@@ -8,7 +8,7 @@ const Slider2 = () => {
           
             <div className="left-banner space-y-2 md:w-[40%]">
            
-           <p  className='font-workSense' >Welcome to DreamSpace</p>
+           <p  className='font-workSense text-orange-500' >Welcome to DreamSpace</p>
            <h1  className="text-[40px] font-bold font-poppins" >Luxurious Apartment Living </h1>
             <p  className="font-workSense" >City Living Made Easy - Close to Shops, Transit, Local Attractions, Lively Neighborhood, and More!!</p>
            

@@ -9,6 +9,7 @@ import Login from "../component/login/Login";
 import Registar from "../component/registar/Registar";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 import UpdateProfile from "../component/updateProfile/UpdateProfile";
+import AboutUs from "../pages/aboutUs/AboutUs";
 
 
 
@@ -38,7 +39,10 @@ const router = createBrowserRouter([
 
             path: '/details/:id',
             loader: () =>   fetch('/data.json'),
-            element:<Details></Details>
+            element:<PrivateRoute>
+
+<Details></Details>
+            </PrivateRoute>
             
         },
         {
@@ -48,6 +52,13 @@ const router = createBrowserRouter([
         {
             path:'/registar',
             element:<Registar></Registar>
+        },
+        {
+            path:'/about',
+            element: <PrivateRoute>
+<AboutUs></AboutUs>
+
+            </PrivateRoute>
         }
     ]
 }
