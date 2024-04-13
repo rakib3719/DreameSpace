@@ -56,7 +56,7 @@ setName(names)
             </Helmet>
       <form   onSubmit={formSUbmit}>
 
-    <h1 className="text-orange-500 flex gap-2 font-bold text-lg items-center pl-4">    <GrDocumentUpdate /> Update your profile</h1>
+    <h1 className="text-orange-500 animate__animated animate__bounce flex gap-2 font-bold text-lg items-center pl-4">    <GrDocumentUpdate /> Update your profile</h1>
 
     <hr />
 
@@ -127,10 +127,10 @@ setName(names)
 
  <div  className="">
 
- <button  className="flex ml-auto items-center font-bold font-workSense  gap-2 bg-orange-500 mt-4 text-right  btn">
+ <button  className="flex ml-auto animate__animated  animate__rubberBand items-center font-bold font-workSense  gap-2 bg-orange-500 mt-4 text-right  btn">
 
-<MdSave className="text-blue-950 flex text-3xl   "/>
-<span>    Save </span>
+<MdSave  className="text-blue-950 flex text-3xl   "/>
+<span >    Save </span>
 </button>
 
  </div>

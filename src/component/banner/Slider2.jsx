@@ -13,7 +13,7 @@ const Slider2 = () => {
             <p  className="font-workSense" >City Living Made Easy - Close to Shops, Transit, Local Attractions, Lively Neighborhood, and More!!</p>
            
             </div>
-            <div className="right-banner mt-8 md:mt-0">
+            <div className="  right-banner mt-8 md:mt-0">
             <img  className=' h-[200px] mx-auto w-[500px]  md:h-[500px] lg:w-[700px] ' src={bg2} alt="" />
            
            </div>

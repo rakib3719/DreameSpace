@@ -7,6 +7,10 @@ import router from './routes/Router'
 import AuthContext from './context/AuthContext'
 
 import { HelmetProvider } from 'react-helmet-async'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+import 'animate.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

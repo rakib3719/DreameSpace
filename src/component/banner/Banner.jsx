@@ -15,6 +15,7 @@ import Slider4 from './Slider4';
 
 
 
+
 const Banner = () => {
 
       
@@ -23,7 +24,7 @@ const Banner = () => {
     return (
 
 
-<Swiper data-aos="fade-down"
+<Swiper 
    modules={[Navigation, Pagination, Scrollbar, A11y]}
 spaceBetween={50}
 slidesPerView={1}
@@ -32,10 +33,12 @@ navigation
    
 onSlideChange={() => console.log('slide change')}
 onSwiper={(swiper) => console.log(swiper)}
+
+
 >
-<SwiperSlide> <Slider></Slider> </SwiperSlide>
+<SwiperSlide   > <Slider></Slider> </SwiperSlide>
 <SwiperSlide> <Slider2></Slider2> </SwiperSlide>
-<SwiperSlide> <Slider3></Slider3>  </SwiperSlide>
+<SwiperSlide > <Slider3></Slider3>  </SwiperSlide>
 <SwiperSlide>  <Slider4></Slider4> </SwiperSlide>
 
 </Swiper>
