@@ -69,6 +69,16 @@ background-color: transparent !important;
     transition-delay: 4s;
 }
 
+/* .navbar{
+
+    background-image: url('./assets/images/registarbg.png');
+    background-size: cover;
+    border-radius: 20px;
+
+} */
+
+
+
 @media screen and (max-width: 770px) {
     .error-bg {
         background-image: none;

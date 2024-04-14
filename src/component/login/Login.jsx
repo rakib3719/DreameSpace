@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const currentLocation = useLocation()
-    console.log(currentLocation);
+
 const  navigate =  useNavigate()
     const {logIn, loginWithGoogle, loginWithTwiter} = useContext(ContextAuth)
 
@@ -15,7 +15,8 @@ const googleLogin = ()=> {
     loginWithGoogle()
     .then(result => {
         console.log(result);
-        navigate(currentLocation.state)
+        toast("Login Successfully")
+        setTimeout(()=> { navigate(currentLocation.state)}, 1000)
     })
     .catch(error => {
         toast.error(error.message)
@@ -27,7 +28,8 @@ const twiterLogin = ()=> {
     loginWithTwiter()
     .then(result => {
         console.log(result);
-        navigate(currentLocation.state)
+        toast("Login Successfully")
+        setTimeout(()=> { navigate(currentLocation.state)}, 2000)
     })
     .catch(error => {
         toast.error(error.message)
@@ -41,7 +43,9 @@ const twiterLogin = ()=> {
 logIn(email, password)
 .then(result => {
     console.log(result);
- navigate(currentLocation.state)
+    toast("Login Successfully")
+
+    setTimeout(()=> { navigate(currentLocation.state)}, 2000)
 })
 .catch(error => {
     console.log(error.message);
@@ -51,6 +55,7 @@ logIn(email, password)
     return (
         <div  className="login-bg h-[720px] md:h-[550px] flex items-center rounded-lg mt-8 ">
     <Helmet>
+     
         <title> DreamSpace | LogIn </title>
     </Helmet>
     <ToastContainer></ToastContainer>

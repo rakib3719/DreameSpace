@@ -30,7 +30,7 @@ const {area, description
   <div className="hero-content animate__animated animate__fadeInDown text-center text-neutral-content">
     <div className="max-w-md">
       <h1   className="mb-5  text-3xl font-bold font-playFair">{estate_title}</h1>
-      <h1 className="mb-5 text-xl animate__animated animate__fadeInRight font-bold font-poppins">{segment_name}</h1>
+      <h1 className="mb-5 text-xl animate__animated animate__fadeInLeft font-bold font-poppins">{segment_name}</h1>
       <p className="mb-5 font-workSense">{description}</p>
   
     </div>

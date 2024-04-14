@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ContextAuth } from "../../context/AuthContext";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 
 const Registar = () => {
     
-
+const navigate = useNavigate()
 const {SignUp, updatesProfile} = useContext(ContextAuth)
 
     const handleSubmit = e => {
@@ -48,6 +48,12 @@ updatesProfile(name, photo)
   console.log(error);
   });
 toast("Registration Successfully")
+
+setTimeout(()=>{
+    navigate('/')
+}, 3000)
+
+
 
 })
 .catch(error => {

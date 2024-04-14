@@ -23,7 +23,7 @@ const logOutHandle = ()=>{
 <li>    <NavLink  to='/about' >  About Us </NavLink></li>
     </div>
     return (
-        <div>
+        <div   className="navbar">
          <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -68,6 +68,8 @@ wrapperStyle={{}}
 
 />
 </div> :  
+
+
 <div className="navbar-end flex items-center">
 
   {

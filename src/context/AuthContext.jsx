@@ -36,7 +36,7 @@ return createUserWithEmailAndPassword(auth, email, password)
 const logIn = (email, password)=> {
 
 
-  setLoader(true)
+  
   return signInWithEmailAndPassword(auth, email, password)
 }
 
