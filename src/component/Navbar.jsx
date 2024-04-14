@@ -2,11 +2,12 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ContextAuth } from "../context/AuthContext";
 import { FaUser } from "react-icons/fa"
+import { FallingLines, RotatingLines } from "react-loader-spinner";
 
 
 const Navbar = () => {
 
-const {user, logOut} = useContext(ContextAuth)
+const {user, logOut, loader} = useContext(ContextAuth)
 console.log(user)
 const logOutHandle = ()=>{
   logOut()
@@ -46,34 +47,60 @@ const logOutHandle = ()=>{
 
    
   </div>
-  <div className="navbar-end flex items-center">
 
+
+{
+
+loader ?  <div  className="text-center w-[50%] mx-auto flex justify-center">
+
+<RotatingLines
+visible={true}
+height="40"
+width="40"
+color="grey"
+strokeWidth="5"
+animationDuration="0.75"
+ariaLabel="rotating-lines-loading"
+wrapperStyle={{}}
+
+
+
+
+/>
+</div> :  
+<div className="navbar-end flex items-center">
+
+  {
+
+    user && <div>
+    <div className="tooltip tooltip-bottom mr-4" data-tip={user.displayName} >
+    
     {
-
-      user && <div>
-      <div className="tooltip tooltip-bottom mr-4" data-tip={user.displayName} >
-      
-      {
-        user.photoURL ?       <img src={user.photoURL} className="w-10 sm:w-12 mt-2 rounded-full h-10 sm:h-12 border-2 border-orange-600" alt="" /> :<FaUser className="sm:text-3xl " ></FaUser> 
-      }
-      </div>
-          </div>
+      user.photoURL ?       <img src={user.photoURL} className="w-10 sm:w-12 mt-2 rounded-full h-10 sm:h-12 border-2 border-orange-600" alt="" /> :<FaUser className="sm:text-3xl " ></FaUser> 
     }
-    {
+    </div>
+        </div>
+  }
+  {
 
-      user &&  <Link onClick={logOutHandle} className="btn text-white bg-orange-500"> 
-      Log out </Link>  
-    }
+    user &&  <Link onClick={logOutHandle} className="btn text-white bg-orange-500"> 
+    Log out </Link>  
+  }
 
-    {
+  {
 
-      !user && <Link  to='/login' className="btn text-white bg-orange-500"> 
-      Log in </Link>
+    !user && <Link  to='/login' className="btn text-white bg-orange-500"> 
+    Log in </Link>
 
-    }
+  }
 
 
-  </div>
+</div>
+
+
+
+
+}
 </div>
         </div>
     );

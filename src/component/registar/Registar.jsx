@@ -22,14 +22,20 @@ const {SignUp, updatesProfile} = useContext(ContextAuth)
      
 
 
- if(password < 6){
-      toast.error(" Password should be at least 6 characters");
-      return
-        }
+
+
+
+
         if(!/^(?=.*[A-Z])(?=.*[a-z]).+$/.test(password)){
  toast.error("Password Must have a Lowercase and a Uppercase letter");
  return
         }
+
+        if(password.length < 6){
+            toast.error("Password should be at least 6 characters");
+            return
+              }
+      
 
 SignUp(email, password)
 .then(result => {
@@ -78,10 +84,10 @@ toast("Registration Successfully")
         
         <div className="m-auto  md:mt-[45%]">
         
-        <h1  className="text-white font-bold text-3xl font-playFair">  Registar Now! </h1>
+        <h1  className="text-white animate__animated animate__fadeInLeft font-bold text-3xl font-playFair">  Registar Now! </h1>
         
         
-        <p  className="text-gray-300 mb-4 md:mb-0">To keep conneted with us please 
+        <p data-aos="fade-up-right" data-aos-duration="2000"  data-aos-delay="1000" className="text-gray-300 mb-4 md:mb-0">To keep conneted with us please 
        Registar with your personal info</p>
         </div>
         
@@ -89,7 +95,10 @@ toast("Registration Successfully")
         </div>
         </div>
         
-        <div className="login-main md:col-span-2 rounded-b-3xl  md:rounded-l-none md:rounded-r-3xl  bg-[#D9D9D9]">
+        <div data-aos="flip-down"
+        data-aos-duration="3000"  
+        data-aos-delay="1500"
+         className="login-main md:col-span-2 rounded-b-3xl  md:rounded-l-none md:rounded-r-3xl  bg-[#D9D9D9]">
         
         <h1  className=" font-bold text-2xl font-workSense text-orange-500 text-center mt-4 md:mt-12"> Registar into DreamSpace </h1>
         <form onSubmit={handleSubmit} className="text-center p-4 md:p-0 mt-4"> 
