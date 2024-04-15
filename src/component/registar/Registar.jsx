@@ -1,15 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ContextAuth } from "../../context/AuthContext";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from "react-helmet-async";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 
 
 const Registar = () => {
     
 const navigate = useNavigate()
 const {SignUp, updatesProfile} = useContext(ContextAuth)
+const [showPassword, setShowPassword] = useState(false)
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -114,16 +116,35 @@ setTimeout(()=>{
 
 
 
-
+<br />
         
-        <input name="email" type="email" placeholder="Type Here Your Email" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black" required />
-        
-
+        <input name="email" type="email" placeholder="Type Here Your Email" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black"  />
+      
+<br />
         <input name="photo" type="text" placeholder="Drop Your photo URL" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black" />
 
 
-        
-        <input name="password" type="password" placeholder="Type Your Password" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black" required />
+        <div className="relative">
+    <input
+        name="password"
+        type= {!showPassword ? 'password' : "text"} 
+        placeholder="Type Your Password"
+        className="input input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs -mb-4 placeholder-black"
+        required
+    />
+<div onClick={()=>{
+    setShowPassword(!showPassword)
+}} className="absolute top-10 right-1/4 xl:right-1/3 cursor-pointer">
+
+{ !showPassword ?
+    <FaRegEye  /> :  <FaRegEyeSlash  />} 
+</div>
+</div>
+
+
+
+   
+
         <br />
         
         <input type="submit" value="Registar" className="btn w-full bg-orange-500 text-white max-w-[80%] sm:max-w-[70%] md:max-w-xs  rounded-full  hover:bg-orange-600 mt-6" />
