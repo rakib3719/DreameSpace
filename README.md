@@ -13,11 +13,11 @@
 - **Property Listings:**
    - Displays available properties with details such as images, descriptions, and pricing.
 
-- **Wishlist Functionality:**
-   - Users can add properties to their wishlist for future reference or comparison.
+- **User Profile Management:**
+  - Users can update their profile information such as name and profile picture
 
-- **Interactive Charts:**
-   - Utilizes chart components to showcase market trends or property statistics.
+- **Vite Configuration:**
+  - Configures Vite build settings in the `vite.config.js` file for optimized production builds.
 
 ## Characteristics:
 - **Secure Authentication:**
