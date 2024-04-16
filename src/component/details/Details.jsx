@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { FaBuilding, FaChartArea, FaLocationArrow } from "react-icons/fa";
+import { FaAlignCenter, FaBuilding, FaChartArea, FaLocationArrow } from "react-icons/fa";
 import { ScrollRestoration, useLoaderData, useParams } from "react-router-dom";
 
 
@@ -56,7 +56,7 @@ const {area, description
 <div className=" pb-2  ml-4 mr-2 pt-6">
 
 <p  className=" text-white flex items-center gap-4">
-<FaChartArea>   </FaChartArea> {area}</p>
+  <FaAlignCenter></FaAlignCenter> DreamSpace </p>
 </div>
 
 </div>
@@ -77,7 +77,7 @@ const {area, description
 
 <div data-aos="fade-up"
      data-aos-duration="3000"
-     data-aos-delay="2500"
+     data-aos-delay="2000"
  className="mt-8">
 
   <h1  className="font-bold font-playFair text-2xl">Facilities:</h1>

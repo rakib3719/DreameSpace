@@ -14,7 +14,9 @@ const Error = () => {
  <div  className="text-center w-[50%] mx-auto mt-8 md:mt-0">
          
              <p  className="text-3xl font-poppins text-red-700 font-bold">OOPS..</p>
-             <p  className="text-red-600 font-bold"> Page {error.statusText} </p>
+           {
+           error.statusText ?   <p  className="text-red-600 font-bold"> Page {error.statusText} </p> : <p>Something is wrong</p>
+           }
              <p className="text-red-600">{error.data}</p>
     <div  className="mt-8 pb-4">
 

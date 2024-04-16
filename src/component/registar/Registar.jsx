@@ -127,7 +127,7 @@ setTimeout(()=>{
         <div className="relative">
     <input
         name="password"
-        type= {!showPassword ? 'password' : "text"} 
+        type= {showPassword ? 'text' : "password"} 
         placeholder="Type Your Password"
         className="input input-bordered bg-transparent rounded-full border-2 border-[#000000] mt-6 w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs -mb-4 placeholder-black"
         required
@@ -136,7 +136,7 @@ setTimeout(()=>{
     setShowPassword(!showPassword)
 }} className="absolute top-10 right-1/4 xl:right-1/3 cursor-pointer">
 
-{ !showPassword ?
+{ showPassword ?
     <FaRegEye  /> :  <FaRegEyeSlash  />} 
 </div>
 </div>

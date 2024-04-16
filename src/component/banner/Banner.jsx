@@ -34,7 +34,7 @@ navigation
 onSlideChange={() => console.log('slide change')}
 onSwiper={(swiper) => console.log(swiper)}
 
-
+className='z-0 '
 >
 <SwiperSlide   > <Slider></Slider> </SwiperSlide>
 <SwiperSlide> <Slider2></Slider2> </SwiperSlide>

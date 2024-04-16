@@ -20,10 +20,11 @@ const logOutHandle = ()=>{
     
 <li>    <NavLink  to='/' >  Home </NavLink></li>
 <li>    <NavLink  to='/update_profile' >  Update Profile </NavLink> </li>
-<li>    <NavLink  to='/about' >  About Us </NavLink></li>
+<li>    <NavLink  to='/
+investment' >  Investment </NavLink></li>
     </div>
     return (
-        <div   className="navbar">
+        <div   className="navbar z-10 relative">
          <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">

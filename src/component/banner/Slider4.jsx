@@ -10,7 +10,7 @@ const Slider4 = () => {
            
            <p  className='font-workSense text-orange-500' >Welcome to DreamSpace</p>
           
-<h1 className="text-[40px] font-bold font-poppins">Exquisite Senior Living Communities</h1>
+<h1  className=" text-[25px] sm:text-[34px] lg:text-[40px] font-bold font-poppins">Exquisite Senior Living Communities</h1>
 <p className="font-workSense">Elegant residences nestled near essential amenities like supermarkets, bus stops, train stations, and the lively Carmen Neighborhood, offering a vibrant lifestyle for seniors and their families.</p>
            
             </div>

@@ -18,7 +18,7 @@ const SingleCard = ({cardData}) => {
         <div  className=''>
           <div className="card  bg-base-100 shadow-xl">
 <div  className='relative font-workSense'>
-<figure  ><img src={image}  className='h-[300px] w-full'  /></figure>
+<figure  ><img src={image}  className='h-[300px] w-full '  /></figure>
 
 <p  className="bg-[#F97316B3] p-2 status absolute top-0 left-0"> {status} </p>
 <p  className="bg-[#F97316B3] p-2 status2 absolute top-0 right-0" > {area} </p>

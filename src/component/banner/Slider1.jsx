@@ -10,7 +10,7 @@ const Slider = () => {
    data-aos-duration="2000"  data-aos-delay="200"  className="left-banner space-y-2 md:w-[40%]">
            
            <p  className='font-workSense text-orange-500' >Welcome to DreamSpace</p>
-           <h1   className="text-[40px] font-bold font-poppins" >Exquisite Family House Management</h1>
+           <h1   className=" text-[25px] sm:text-[34px] lg:text-[40px] font-bold font-poppins" >Exquisite Family House Management</h1>
             <p  className="font-workSense" >Adjacent to Supermarkets, Bus Stops, Train Stations, the Vibrant Carmen Neighborhood, and More!</p>
            
             </div>

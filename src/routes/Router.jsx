@@ -9,7 +9,7 @@ import Login from "../component/login/Login";
 import Registar from "../component/registar/Registar";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 import UpdateProfile from "../component/updateProfile/UpdateProfile";
-import AboutUs from "../pages/aboutUs/AboutUs";
+import Invesment from "../pages/aboutUs/Invesment";
 
 
 
@@ -54,9 +54,9 @@ const router = createBrowserRouter([
             element:<Registar></Registar>
         },
         {
-            path:'/about',
+            path:'/investment',
             element: <PrivateRoute>
-<AboutUs></AboutUs>
+<Invesment></Invesment>
 
             </PrivateRoute>
         }

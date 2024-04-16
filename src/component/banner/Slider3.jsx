@@ -9,7 +9,7 @@ const Slider3 = () => {
             <div className="left-banner space-y-2 md:w-[40%]">
            
            <p  className='font-workSense text-orange-500' >Welcome to DreamSpace</p>
-           <h1  className="text-[40px] font-bold font-poppins" >Convenient Student Housingt</h1>
+           <h1   className=" text-[25px] sm:text-[34px] lg:text-[40px] font-bold font-poppins" >Convenient Student Housingt</h1>
             <p  className="font-workSense" > Close to Campus, Cafes, Libraries, the Vibrant Carmen Area, and Additional Amenities</p>
            
             </div>
