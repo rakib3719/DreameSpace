@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -30,6 +31,7 @@ const Footer = () => {
 <div  className="mt-4" >
 
     <p   className="flex gap-2 items-center text-lg">  <FaPhone  className="text-orange-500"></FaPhone> 01608888888 </p>
+    <p   className="flex gap-2 mt-2 items-center text-lg">  <CiMail  className="text-orange-500"></CiMail> dpsupport76769@gmail.com </p>
     <p   className="flex gap-2 mt-2 items-center text-lg">  <CiMail  className="text-orange-500"></CiMail> bannah76769@gmail.com </p>
 </div>
 
@@ -54,8 +56,9 @@ const Footer = () => {
 <span className="">Subscribe to our Newsletter</span>
 </label> 
 <div className="join">
-<input type="text" placeholder="username@site.com" className="input input-bordered join-item" /> 
+<input type="text" placeholder="username@site.com" className="input input-bordered join-item w-48 sm:w-auto" /> 
 <button className="btn bg-orange-500 border-none join-item">Subscribe</button>
+
 </div>
 </fieldset>
 
@@ -99,7 +102,10 @@ const Footer = () => {
 
 
 <div className="right-row">
-<p className="bg-[#8D8080] w-[100%] h-1 " ></p>
+<p className="bg-[#8D8080] w-[100%] h-1 " >
+
+  
+</p>
 
 </div>
 
@@ -109,10 +115,16 @@ const Footer = () => {
 
            </div>
            <footer className="footer footer-center p-4 mt-4 text-white">
-  <aside>
+  <aside> 
+  <div className="flex gap-4">  <Link to="/">Home</Link>
+    <Link to="/update_profile">UpdateProfile</Link>
+    <Link to="/investment">Investment</Link>
+    </div>
     <p>Copyright © 2024 - All right reserved by DreamSpace Depoloper team</p>
+
   </aside>
 </footer>
+
         </div>
     );
 };

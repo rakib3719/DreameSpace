@@ -15,7 +15,7 @@ const SingleCard = ({cardData}) => {
 , status
 } = cardData
     return (
-        <div  className=''>
+        <div className=''>
           <div className="card  bg-base-100 shadow-xl">
 <div  className='relative font-workSense'>
 <figure  ><img src={image}  className='h-[300px] w-full '  /></figure>

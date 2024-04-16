@@ -74,7 +74,7 @@ setName(names)
 </div>
 
 <div className="col-span-3">
-<input type="email" value={user.email}  className="input input-bordered w-full  bg-[#dcedc8]" />
+<input type="email" value={user.email}  className="input input-bordered  disabled:bg-[#dcedc8] w-full  bg-[#dcedc8]" disabled={user.email===null} />
 
 </div>
 
