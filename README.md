@@ -29,8 +29,8 @@
 - **Private Routes:**
    - Implements private routes using `react-router-dom` and `PrivateRoute` component for authenticated user access.
 
-- **User Profile Updates:**
-   - Allows registered users to update their profile information such as name and profile picture.
+- **Smooth User Experience:**
+   - DreamSpace Real Estate offers a seamless user experience, leveraging React's capabilities and expert development for effortless navigation and engagement
 
 - **Smooth Animations:**
    - Incorporates animations using `AOS` package and `Animate.css` library for engaging user interactions.
