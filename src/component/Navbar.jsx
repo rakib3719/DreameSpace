@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ContextAuth } from "../context/AuthContext";
 import { FaUser } from "react-icons/fa"
-import { FallingLines, RotatingLines } from "react-loader-spinner";
+import { RotatingLines } from "react-loader-spinner";
 
 
 const Navbar = () => {
@@ -16,12 +16,14 @@ const logOutHandle = ()=>{
     .catch(error => {alert(error.message)})
   })
 }
-    const nav = <div className="md:flex text-lg font-poppins">
+    const nav = <div className="lg:flex text-lg font-poppins">
     
 <li>    <NavLink  to='/' >  Home </NavLink></li>
-<li>    <NavLink  to='/update_profile' >  Update Profile </NavLink> </li>
-<li>    <NavLink  to='/
-investment' >  Investment </NavLink></li>
+
+<li>    <NavLink  to='/update_profile' >  Update Profile </NavLink>  </li>
+<li>    <NavLink  to='/investment' >  Investment </NavLink></li> 
+
+
     </div>
     return (
         <div   className="navbar z-10 relative">
@@ -31,7 +33,7 @@ investment' >  Investment </NavLink></li>
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+      <ul tabIndex={0} className="menu menu-md dropdown-content mt-3 z-[1]  shadow bg-base-100 rounded-box w-52">
         {nav}
       </ul>
     </div>

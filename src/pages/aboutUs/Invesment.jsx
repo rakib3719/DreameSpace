@@ -19,7 +19,7 @@ const Invesment = () => {
 
 <Helmet>
 
-    <title> DreamSpace | Invesment </title>
+    <title>   Invesment </title>
 </Helmet>
 
 <div  className="about-left flex-1">

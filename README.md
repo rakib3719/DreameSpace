@@ -1,4 +1,4 @@
-# DreamSpace Real Estate Website
+# DreamSpace
 
 **Live Site URL:** [DreamSpace Real Estate](https://dreamspace-1f58d.web.app/)
 
@@ -36,6 +36,6 @@
    - Incorporates animations using `AOS` package and `Animate.css` library for engaging user interactions.
 
 ## npm Packages Used:
-- **AOS Package:** [aos](https://www.npmjs.com/package/aos) - Adds scroll animations to enhance user experience.
-- **Animate.css:** [animate.css](https://animate.style/) - Provides a library of CSS animations for smoother transitions.
-- **Swiper Slider:** [swiper](https://swiperjs.com/) - Offers a touch-friendly slider for showcasing property listings or images.
+- **AOS Package:** [aos](https://www.npmjs.com/package/aos) 
+- **Animate.css:** [animate.css](https://animate.style/) 
+- **Swiper Slider:** [swiper](https://swiperjs.com/) 

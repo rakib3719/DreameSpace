@@ -49,14 +49,24 @@ logIn(email, password)
 })
 .catch(error => {
     console.log(error.message);
-    toast.error('Invalid email or password')
+  
+    let storeError=[]
+    let errorLetter=error.message.split(' ')[2].split('')
+    for (let i = 6; i < errorLetter.length-2; i++) {
+     
+     storeError.push(errorLetter[i])
+ 
+     
+    }
+
+    error.message=="Firebase: Error (auth/invalid-credential)." ? toast.error( "Invalid Email Or Password"): storeError ? toast.error(storeError.join('')) : toast.error(error.message)
 })
     }
     return (
         <div  className="login-bg h-[720px] md:h-[550px] flex items-center rounded-lg mt-8 ">
     <Helmet>
      
-        <title> DreamSpace | LogIn </title>
+        <title> LogIn </title>
     </Helmet>
     <ToastContainer></ToastContainer>
 <div  className="w-[94%] md:w-[82%] mx-auto bg-white   h-[84%] my-auto grid md:grid-cols-3 rounded-3xl">

@@ -30,7 +30,6 @@ const loginWithTwiter= ()=> {
 }
 
 const SignUp = (email, password)=>{
-setLoader(true)
 return createUserWithEmailAndPassword(auth, email, password)
 }
 const logIn = (email, password)=> {

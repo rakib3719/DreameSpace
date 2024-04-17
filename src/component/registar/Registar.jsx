@@ -46,21 +46,31 @@ updatesProfile(name, photo)
 .then(() => {
     // Profile updated!
     // ...
+
+
   }).catch((error) => {
   console.log(error);
   });
 toast("Registration Successfully")
 
+
+
 setTimeout(()=>{
     navigate('/')
-}, 3000)
-
-
+    location.reload()
+}, 2000)
 
 })
 .catch(error => {
+  if( error.message === "Firebase: Error (auth/email-already-in-use)."){
+
+    toast.error("This email is already in use.")
+    return
+  }
    
     toast.error(error.message)
+
+
 })
 
 
@@ -73,7 +83,7 @@ setTimeout(()=>{
         <Helmet>
             
 
-            <title> DreamSpace | Registar </title>
+            <title> Registar </title>
         </Helmet>
         <div  className="w-[94%] md:w-[82%] mx-auto bg-white   h-[84%] my-auto grid md:grid-cols-3 rounded-3xl">
         
@@ -112,7 +122,7 @@ setTimeout(()=>{
         <form onSubmit={handleSubmit} className="text-center p-4 md:p-0 mt-4"> 
 
   
-        <input name="name" type="text" placeholder="Type Here Your Name" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000]  w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black" required />
+        <input name="name" type="text" placeholder="Type Here Your Name" className="input  input-bordered bg-transparent rounded-full border-2 border-[#000000]  w-full max-w-[80%] sm:max-w-[70%] md:max-w-xs placeholder-black"  />
 
 
 

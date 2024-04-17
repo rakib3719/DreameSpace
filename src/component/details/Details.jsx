@@ -31,7 +31,7 @@ const {area, description
     <div className="max-w-md">
       <h1   className="mb-5  text-3xl font-bold font-playFair">{estate_title}</h1>
       <h1 className="mb-5 text-xl animate__animated animate__fadeInLeft font-bold font-poppins">{segment_name}</h1>
-      <p className="mb-5 font-workSense">{description}</p>
+
   
     </div>
   </div>
@@ -70,7 +70,15 @@ const {area, description
 
 <h1   data-aos="fade-right"  data-aos-duration="1000"  className="font-poppins font-semibold text-xl">{segment_name}  {status} in {location}</h1>
 <p  data-aos="flip-left"  data-aos-duration="3000" data-aos-delay="300" className="font-workSense "> Made by {engineers} </p>
+
+
 <h5 data-aos="flip-up"  data-aos-duration="3000" data-aos-delay="2000"  className="font-semibold font-workSense text-lg"> {price} </h5>
+</div>
+<div className="mt-4 sm:w-[70%] lg:w-[60%]" 
+data-aos="fade-up"
+     data-aos-duration="3000"
+     data-aos-delay="2000">
+  <span className="font-bold  font-playFair text-lg">Decription:-</span>  {description}
 </div>
 
 
@@ -78,7 +86,7 @@ const {area, description
 <div data-aos="fade-up"
      data-aos-duration="3000"
      data-aos-delay="2000"
- className="mt-8">
+ className="mt-4">
 
   <h1  className="font-bold font-playFair text-2xl">Facilities:</h1>
 

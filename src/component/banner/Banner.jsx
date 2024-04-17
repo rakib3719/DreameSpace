@@ -1,6 +1,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar,A11y } from 'swiper/modules';
+import { Navigation,  Autoplay, Pagination, Scrollbar,A11y } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -25,7 +25,7 @@ const Banner = () => {
 
 
 <Swiper 
-   modules={[Navigation, Pagination, Scrollbar, A11y]}
+   modules={[Navigation,Autoplay, Pagination, Scrollbar, A11y]}
 spaceBetween={50}
 slidesPerView={1}
 navigation
@@ -35,6 +35,14 @@ onSlideChange={() => console.log('slide change')}
 onSwiper={(swiper) => console.log(swiper)}
 
 className='z-0 '
+speed={1500}
+autoplay={{
+    delay: 2000,
+  
+    disableOnInteraction: false,
+  }}
+   
+
 >
 <SwiperSlide   > <Slider></Slider> </SwiperSlide>
 <SwiperSlide> <Slider2></Slider2> </SwiperSlide>
