@@ -14,7 +14,7 @@ const {area, description
 , engineers, estate_title, facilities, image, location
 , price
 , segment_name, status
-, unique_feature} = mainData
+} = mainData
 
     return (
  <div  className=" w-[94%] md:w-[90%] mx-auto mt-8">

@@ -40,7 +40,7 @@ Investing in DreamSpace is advantageous because it offers stable returns, divers
 <br />
 
 <p  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2000" className="text-[#666666] font-workSense">
-Investing in DreamSpace Real Estate means aligning with a company that cherishes dreams and assists in finding the ideal home. Their seasoned team, market expertise, and innovative strategies ensure well-informed decisions and dream realization. Whether buying, selling, or investing, DreamSpace’s commitment to integrity and personalized attention guides clients towards turning real estate aspirations into reality.</p>
+Investing in DreamSpace Real Estate means aligning with a company that cherishes dreams and assists in finding the ideal home. Their seasoned team, market expertise, and innovative strategies ensure well-informed decisions and dream realization. Whether buying, selling, or investing, DreamSpace commitment to integrity and personalized attention guides clients towards turning real estate aspirations into reality.</p>
 </div>
 <div data-aos="fade-up" data-aos-duration="1500" className="about-right mt-8 lg:mt-0 flex-1" >
 
@@ -154,7 +154,7 @@ className='text-3xl font-playFair  mt-24 font-bold text-center' >
  Honored Investors</h1>
 <p    data-aos="fade-right"
    data-aos-duration="2000"  data-aos-delay="200"  className='text-orange-500 mt-3 font-workSense text-center'> 
-   Our honored investors benefit from our team's expertise and dedicated service.</p>
+   Our honored investors benefit from our teams expertise and dedicated service.</p>
 
 <div  className="flex mt-4 mb-4 mx-auto w-[10%]" >
 <p   className="bg-blue-800 w-10 h-1 " ></p>

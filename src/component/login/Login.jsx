@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import {  FaGoogle, FaTwitter } from "react-icons/fa";
-import { Link,  useLocation, useNavigate } from "react-router-dom";
+import { Link,  ScrollRestoration,  useLocation, useNavigate } from "react-router-dom";
 import { ContextAuth } from "../../context/AuthContext";
 import { ToastContainer, toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
@@ -40,6 +40,9 @@ const twiterLogin = ()=> {
         e.preventDefault()
         const email = e.target.email.value
         const password = e.target.password.value
+
+  
+
 logIn(email, password)
 .then(result => {
     console.log(result);
@@ -85,7 +88,7 @@ logIn(email, password)
 <div >
 
 <div className="m-auto  md:mt-[45%]">
-
+<ScrollRestoration></ScrollRestoration>
 <h1 className="text-white animate__animated animate__fadeInLeft font-bold text-3xl font-playFair">  Log In Now! </h1>
 
 
@@ -123,7 +126,10 @@ className="login-main md:col-span-2 rounded-b-3xl  md:rounded-l-none md:rounded-
 <p className="mt-2 font-bold font-workSense">Or log In with</p>
 
 <button onClick={googleLogin} className="btn bg-[#357488] md:max-w-xs rounded-full hover:bg-[#4595ae] mt-2 text-white md:px-10 mr-3" > <FaGoogle></FaGoogle>  Goggle </button>
-<button onClick={twiterLogin} className="btn btn-outline mt-4 md:px-10 ml-3 max-w-xs rounded-full">  <FaTwitter></FaTwitter></button>
+<button onClick={twiterLogin} className="btn btn-outline mt-4 md:px-10 ml-3 max-w-xs  font-bold rounded-full">  <FaTwitter></FaTwitter>
+
+Twitter
+</button>
 </div>
 
 <p className="mt-4  text-center font-workSense pb-8"> Don't Have any account? <Link to={'/registar'} className="text-orange-500 font-bold underline">Registar</Link> </p>  
