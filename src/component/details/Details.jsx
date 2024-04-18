@@ -74,18 +74,18 @@ const {area, description
 
 <h5 data-aos="flip-up"  data-aos-duration="3000" data-aos-delay="2000"  className="font-semibold font-workSense text-lg"> {price} </h5>
 </div>
-<div className="mt-4 sm:w-[70%] lg:w-[60%]" 
-data-aos="fade-up"
+<div data-aos="fade-up"
      data-aos-duration="3000"
      data-aos-delay="2000">
+
+<div className="mt-4 sm:w-[70%] lg:w-[60%]" 
+>
   <span className="font-bold  font-playFair text-lg">Decription:-</span>  {description}
 </div>
 
 
 
-<div data-aos="fade-up"
-     data-aos-duration="3000"
-     data-aos-delay="2000"
+<div 
  className="mt-4">
 
   <h1  className="font-bold font-playFair text-2xl">Facilities:</h1>
@@ -95,6 +95,7 @@ data-aos="fade-up"
     
 facilities.map( (item, idx)=> <p key={idx}> {item}</p>)
   }
+</div>
 </div>
 
 
