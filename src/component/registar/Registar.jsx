@@ -26,17 +26,17 @@ const [showPassword, setShowPassword] = useState(false)
 
 
 
-
+        if(password.length < 6){
+            toast.error("Password should be at least 6 characters");
+            return
+              }
 
         if(!/^(?=.*[A-Z])(?=.*[a-z]).+$/.test(password)){
  toast.error("Password Must have a Lowercase and a Uppercase letter");
  return
         }
 
-        if(password.length < 6){
-            toast.error("Password should be at least 6 characters");
-            return
-              }
+       
       
 
 SignUp(email, password)

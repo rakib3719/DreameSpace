@@ -21,7 +21,7 @@ const {area, description
 
 <Helmet>
 
-<title> PropertyDetails {id}</title>
+<title> PropertyDetails </title>
 
 </Helmet>
 <div className="hero min-h-[80vh] border-[3px] border-b-0 rounded-b-none rounded  border-orange-500" style={{backgroundImage: `url(${image})`}}>

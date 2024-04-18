@@ -1,13 +1,20 @@
 import { Link, useRouteError } from "react-router-dom";
 
 import errorImg from '../../assets/images/cuate.png'
+import { Helmet } from "react-helmet-async";
+
 
 const Error = () => {
     const error = useRouteError()
     console.log(error);
     return (
+   
     <div className="bg-[#FFEE93F2] pt-8 md:pt-24 h-[700px] md:h-[600px]">
+<Helmet>
 
+
+  <title>ERROR!</title>
+</Helmet>
 <div className="w-[90%] justify-between mx-auto mx-w-[1220px] flex flex-col-reverse md:flex-row  items-center bg-white shadow-xl rounded-xl">
          
 

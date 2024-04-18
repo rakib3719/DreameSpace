@@ -37,7 +37,7 @@ const logOutHandle = ()=>{
         {nav}
       </ul>
     </div>
-    <a className="btn btn-ghost  text-[16px] sm:text-2xl font-bold font-playFair">  DreamSpace </a>
+    <a className="  text-[16px] sm:text-2xl font-bold font-playFair -ml-3 sm:-ml-0">  DreamSpace </a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
